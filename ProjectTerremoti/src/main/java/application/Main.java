@@ -40,7 +40,7 @@ public class Main extends Application {
 		 primaryStage.setMinWidth(1100);
 		 primaryStage.setMinHeight(650);
 		 
-		
+		 //ciao
 		 Controller controller= (Controller) loader.getController();
 		 	
 		 controller.creaMappa();
