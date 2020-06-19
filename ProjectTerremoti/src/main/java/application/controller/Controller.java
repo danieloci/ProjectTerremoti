@@ -105,13 +105,13 @@ public class Controller {
           NumberAxis yAxis = new NumberAxis();
           yAxis.setLabel("Salary (€)");
 
-          LineChart lineChart = new LineChart<>(xAxis, yAxis);
-          lineChart.setTitle("Average salary per age");
+        //  LineChart lineChart = new LineChart<Terremoto,String>(xAxis, yAxis);
+         // lineChart.setTitle("Average salary per age");
 
           Series<Number, Number> data = new XYChart.Series<Number, Number>();
           data.setName("2016");
 
-          data.getData().add(new XYChart.Data<>(18, 567));
+         /* data.getData().add(new XYChart.Data<Terre>(18, 567));
           data.getData().add(new XYChart.Data<>(20, 612));
           data.getData().add(new XYChart.Data<>(25, 800));
           data.getData().add(new XYChart.Data<>(30, 980));
@@ -124,7 +124,7 @@ public class Controller {
           charts.setLayoutX(250);     
           charts.getChildren().add(lineChart);       
           anchorPane.getChildren().add(charts);
-          
+         */ 
     }
 
     @FXML
