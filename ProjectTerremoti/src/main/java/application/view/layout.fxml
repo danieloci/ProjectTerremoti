@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Controller">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.5" layoutX="217.0" layoutY="37.0" orientation="VERTICAL" prefHeight="563.0" prefWidth="550.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane fx:id="topAnchorPane" minHeight="300.0" minWidth="0.0" prefHeight="300.0" prefWidth="160.0" />
+          <AnchorPane fx:id="bottomAnchorPane" minHeight="200.0" minWidth="0.0" prefHeight="200.0" prefWidth="160.0">
+               <children>
+                  <HBox layoutY="7.0" prefHeight="34.0" prefWidth="548.0" style="-fx-background-color: yellow;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <TextField fx:id="txtSearch">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#search" text="Cerca">
+                           <HBox.margin>
+                              <Insets left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <VBox fx:id="vbox" layoutX="34.0" layoutY="14.0" prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: red;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="btnDashboard" mnemonicParsing="false" onAction="#dashboardAction" prefWidth="300.0" style="-fx-background-color: blue;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCharts" mnemonicParsing="false" onAction="#chartsAction" prefWidth="300.0" style="-fx-background-color: blue;" text="Charts" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnProfilo" mnemonicParsing="false" onAction="#profiloAction" prefWidth="300.0" style="-fx-background-color: blue;" text="Profilo" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDownload" mnemonicParsing="false" onAction="#downloadAction" prefWidth="300.0" style="-fx-background-color: blue;" text="Download" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" text="Segnala" />
+         </children>
+      </VBox>
+      <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: cyan;" text="Log in" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
